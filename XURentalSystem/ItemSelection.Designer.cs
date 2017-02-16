@@ -1,6 +1,6 @@
 ﻿namespace XURentalSystem
 {
-    partial class Form1
+    partial class ItemSelection
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ItemSelection
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(859, 286);
+            this.Name = "ItemSelection";
+            this.Text = "ItemSelection";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
