@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace XURentalSystem
 {
-    public partial class ItemSelection : Form
+    public partial class CalculatorDisplay : Form
     {
-        public ItemSelection()
+        public CalculatorDisplay()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button1.Left += 200;
         }
     }
 }

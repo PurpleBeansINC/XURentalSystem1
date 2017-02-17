@@ -49,13 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inventory.cs" />
-    <Compile Include="InventoryManager.cs" />
-    <Compile Include="ItemSelection.cs">
+    <Compile Include="AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ItemSelection.Designer.cs">
-      <DependentUpon>ItemSelection.cs</DependentUpon>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorDisplay.Designer.cs">
+      <DependentUpon>CalculatorDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs" />
+    <Compile Include="InventoryDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryDisplay.Designer.cs">
+      <DependentUpon>InventoryDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryManager.cs" />
+    <Compile Include="ItemDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemDisplay.Designer.cs">
+      <DependentUpon>ItemDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="MainGUI.cs">
       <SubType>Form</SubType>
@@ -66,8 +84,17 @@
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ItemSelection.resx">
-      <DependentUpon>ItemSelection.cs</DependentUpon>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorDisplay.resx">
+      <DependentUpon>CalculatorDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryDisplay.resx">
+      <DependentUpon>InventoryDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemDisplay.resx">
+      <DependentUpon>ItemDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainGUI.resx">
       <DependentUpon>MainGUI.cs</DependentUpon>
