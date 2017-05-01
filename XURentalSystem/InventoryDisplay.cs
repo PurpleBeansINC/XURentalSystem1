@@ -6,12 +6,14 @@ namespace XURentalSystem
     public partial class InventoryDisplay : Form
     {
         private Inventory inv = new Inventory();
+        private MainGUI mainForm;
 
-        public InventoryDisplay()
+        public InventoryDisplay(MainGUI mainGui)
         {
             InitializeComponent();
             ComboBoxInv.DataSource = inv.Products;
             ComboBoxInv.DisplayMember = "Name";
+            mainForm = mainGui;
         }
 
         private void AddItem_Click(object sender, EventArgs e)
@@ -43,6 +45,11 @@ namespace XURentalSystem
 
             ItemDisplay item = new ItemDisplay(inv, selectedIndex);
             item.Show();
+        }
+
+        private void InventoryDisplay_FormClosing(object sender, EventArgs e)
+        {
+            mainForm.Close();
         }
     }
 }

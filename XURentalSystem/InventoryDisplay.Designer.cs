@@ -94,6 +94,7 @@
             this.Controls.Add(this.AddItem);
             this.Controls.Add(this.ComboBoxInv);
             this.Name = "InventoryDisplay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InventoryDisplay";
             this.ResumeLayout(false);
 

@@ -31,7 +31,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -55,12 +62,6 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalculatorDisplay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CalculatorDisplay.Designer.cs">
-      <DependentUpon>CalculatorDisplay.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inventory.cs" />
     <Compile Include="InventoryDisplay.cs">
       <SubType>Form</SubType>
@@ -82,13 +83,23 @@
       <DependentUpon>MainGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="ProfileAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileAdd.Designer.cs">
+      <DependentUpon>ProfileAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileDisplay.Designer.cs">
+      <DependentUpon>ProfileDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CalculatorDisplay.resx">
-      <DependentUpon>CalculatorDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryDisplay.resx">
       <DependentUpon>InventoryDisplay.cs</DependentUpon>
@@ -98,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainGUI.resx">
       <DependentUpon>MainGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdd.resx">
+      <DependentUpon>ProfileAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileDisplay.resx">
+      <DependentUpon>ProfileDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

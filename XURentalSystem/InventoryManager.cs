@@ -10,9 +10,6 @@ namespace XURentalSystem
 
         public void SaveProducts(List<Product> productsToSave)
         {
-            if (!File.Exists(dataPath))
-                File.Create(dataPath);
-
             string json = JsonConvert.SerializeObject(productsToSave);
 
             File.WriteAllText(dataPath, json);

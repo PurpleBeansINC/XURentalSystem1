@@ -18,7 +18,8 @@ namespace XURentalSystem
             Product product = new Product
             {
                 Name = NameBox.Text,
-                Quantity = int.Parse(AmountBox.Text)
+                Quantity = int.Parse(AmountBox.Text),
+                Price = PriceForRentBox.Text
             };
             inv.addProduct(product);
             this.Close();
@@ -27,6 +28,10 @@ namespace XURentalSystem
         private void CancelButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void NameBox_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
